@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+</head>
+<body>
+    <div id="container">
+
+    </div>
+
+    <script>
+        let tempC = 15;
+        let rainy = false; 
+        let sunny = true;
+        let geoLocation = "Chisinau"
+        let icon
+
+
+        if(rainy) {
+            icon = "Gartoon-Team-Gartoon-Weather-Weather-shower.72.png"
+        }
+        if(sunny) {
+            icon = "sunny.png"
+        }
+        container.innerHTML = `
+            <h2>${geoLocation}<h2>
+            <img src="${icon}">
+            <p>temp: ${tempC} + "℃"</p>`;
+    </script>
+</body>
+</html>
